@@ -1,0 +1,59 @@
+
+    body{
+        font-family: 'Charm', cursive;
+    }
+    .headercs{
+        font-size: 75px;
+        background-image: url(/cs313/public/images/logo12.png);
+        color: rgb(7, 7, 133);
+        background-color: rgb(34, 31, 31);
+        height: 250px;
+        width: 1990px;
+        
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .information{
+        background-image: url(/cs313/public/images/ปกหลัง1.jpg);
+        height: 600px;
+        width: 1990px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .jeans{
+        background-image: url(/cs313/public/images/1990.png);
+        background-color: rgb(34, 31, 31);
+        height: 200px;
+        width: 1990px;
+        font-size: 40px;
+        color: oldlace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button{
+        font-size: 35px;
+        color: oldlace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 1910px;
+        background-color: rgb(34, 31, 31);
+
+    }   
+    .button {padding: 15px 40px;}
+
+    
+    .content{
+        color: rgb(131, 247, 241);
+        font-size: 30px;
+        height: 90px;
+    }
+  
