@@ -4,7 +4,6 @@
     }
     .headercs{
         font-size: 75px;
-        background-image: url(/cs313/public/images/logo12.png);
         color: rgb(7, 7, 133);
         background-color: rgb(34, 31, 31);
         height: 250px;
@@ -18,7 +17,6 @@
 
     }
     .information{
-        background-image: url(/cs313/public/images/พื้นหลัง11.jpg);
         height: 600px;
         width: 1990px;
         display: flex;
@@ -27,7 +25,6 @@
     
     }
     .jeans{
-        background-image: url(/cs313/public/images/1990.png);
         background-color: rgb(34, 31, 31);
         height: 200px;
         width: 1990px;
