@@ -1,28 +1,67 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-
-<div class="row">
-  <div class="col-3"><Counter lable="ok"/></div>
-  <div class="col-3"><Counter lable="ชอบ"/></div>
-  <div class="col-3"><Counter lable="รัก"/></div>
-  <div class="col-3"><Counter lable="เกลียด"/></div>
-</div>
-  
+    <div>
+      <slide />
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <img src="./assets/22.jpg" alt />
+        <counter @cc="sum" />
+      </div>
+      <div class="col-md-6 mb-3 a">
+        <h1>Totol = {{total}}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <img src="./assets/33.jpg" alt />
+        <counter @bb="sumb" />
+      </div>
+      <div class="col-md-6 mb-3 a">
+        <h1>Totol = {{tot}}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <img src="./assets/44.jpg" alt />
+        <counter @dd="sumc" />
+      </div>
+      <div class="col-md-6 mb-3 a">
+        <h1>Totol = {{tota}}</h1>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import Counter from './components/Counter'
+import Counter from "./components/Counter";
+import slide from "./components/slide";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld,
-    Counter, 
-  }
-}
+    Counter,
+    slide,
+  },
+  data: function () {
+    return {
+      total: 0, //ผลรวมทั้งหมด ---->เอาไปแสดงผล {{}}
+      tot: 0,
+      tota:0,
+    };
+  },
+
+  methods: {
+    sum(CounterValue) {
+      this.total += CounterValue;
+    },
+    sumb(Value) {
+      this.tot += Value;
+    },
+    sumc(Va) {
+      this.tota += Va;
+    },
+  },
+};
 </script>
 
 <style>
@@ -33,5 +72,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.a {
+  height: 300px;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
